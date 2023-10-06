@@ -12,22 +12,22 @@
 
 ### Program:
 ```
-SQL> CREATE TABLE ep(
+SQL> CREATE TABLE employee2(
      empid NUMBER,
      empname VARCHAR(10),
      dept VARCHAR(10),
      salary NUMBER
     );
-CREATE OR REPLACE PROCEDURE emp_data AS
+CREATE OR REPLACE PROCEDURE employee_data AS
     BEGIN
-    INSERT INTO ep(empid,empname,dept,salary)
+    INSERT INTO employee2(empid,empname,dept,salary)
     values(1,'John','HR',50000);
-    INSERT INTO ep(empid,empname,dept,salary)
+    INSERT INTO employee2(empid,empname,dept,salary)
     values(2,'Joe','IT',600000);
-    INSERT INTO ep(empid,empname,dept,salary)
+    INSERT INTO employee2(empid,empname,dept,salary)
     values(3,'Bob','Finance',550000);
     COMMIT;
-   FOR emp_rec IN (SELECT * FROM ep)LOOP
+   FOR emp_rec IN (SELECT * FROM employee2)LOOP
    DBMS_OUTPUT.PUT_LINE('EMPLOYEE ID:'||emp_rec.empid||',EMPLOYEE NAME:'|| emp_rec.empname||
    ',DEPARTMENT:'||emp_rec.dept||',SALARY:'||emp_rec.salary);
    END LOOP;
