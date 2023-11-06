@@ -38,7 +38,8 @@ CREATE OR REPLACE PROCEDURE employee_data AS
 ```
 
 ### Output:
-![dbms procedure](https://github.com/aryabaisakhiya/Ex-No-4-Creating-Procedures-using-PL-SQL/assets/119393645/f823ba53-682c-4661-a835-d9b31353e8d5)
+![dbms procedure](![image](https://github.com/aryabaisakhiya/Ex-No-4-Creating-Procedures-using-PL-SQL/assets/119393645/98eb7c1e-7371-4304-83f7-b840a4b3cad5)
+
 
 
 ### Result:
